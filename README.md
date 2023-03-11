@@ -24,9 +24,13 @@
 
 使用例
 
-![画像の説明](img/example_img.jpg "example")
+ブラウザ表示（入力画面）  
+![画像の説明](img/exampleBrowserIMG.jpg "example")
+
+word 表示（貼り付け時）  
+![画像の説明](img/exampleWordIMG.jpg"example")
 
 ---
 
 girl でもなんでもないのですが
-Cover Girl という曲が好きなのでこれにしました( ´∀ ｀ )
+Cover Girl という曲が好きなのでこれにしました。
