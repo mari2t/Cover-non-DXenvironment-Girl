@@ -28,7 +28,7 @@
 ![画像の説明](img/exampleBrowserIMG.jpg "example")
 
 word 表示（貼り付け時）  
-![画像の説明](img/exampleWordIMG.jpg"example")
+![画像の説明](img/exampleWordIMG.jpg "example")
 
 ---
 
