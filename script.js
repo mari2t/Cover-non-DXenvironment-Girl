@@ -5,6 +5,7 @@ const sayStatement = document.getElementById("sayStatement");
 let statementPerson = "";
 let statementCounter = 1;
 
+//発言番号文字列操作関数
 function textStatementCounter() {
   let text = "";
   if (statementCounter < 10) {
@@ -19,8 +20,12 @@ function textStatementCounter() {
   return text;
 }
 
-//発言ボタン
+//発言ボタン関数
 sayStatement.addEventListener("click", () => {
+  if (statementPerson === "") {
+    alert("発言者を選んでください。");
+    return;
+  }
   const timestamp = textFormattedTime();
   const numberStamp = textStatementCounter();
   const input = inputStatement.value;
@@ -37,7 +42,12 @@ sayStatement.addEventListener("click", () => {
     this.classList.add("selected");
     statementPerson = button.textContent;
   });
+  document.getElementById("inputStatement").value = "";
+  document.getElementById("inputStatement").focus();
+  document.getElementById("statementGroup").style.height =
+    800 + statementCounter * 100;
 });
+
 //現在の時刻を23：44のように取得する関数
 function textFormattedTime() {
   const now = new Date();
@@ -48,6 +58,7 @@ function textFormattedTime() {
     .padStart(2, "0")}`;
   return formattedTime;
 }
+
 //会議開始ボタン関数
 const buttons = document.querySelectorAll(".participantButton");
 function startButtons() {
@@ -90,7 +101,7 @@ function startButtons() {
     "終了時刻：" + document.getElementById("EndTime").value;
   MeetingTimeCalculation();
   document.getElementById("textContentStatement").textContent =
-    "記録（ 発言番号 ： 発言時刻 ： 発言者 ： 発言内容 ）";
+    "発言番号 ： 発言時刻 ： 発言者 ： 発言内容";
 }
 //会議終了ボタン関数
 function endButton() {

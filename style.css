@@ -77,25 +77,15 @@ header {
 .statementGroup {
   padding-left: 15px;
   width: 80%;
-  height: 1200px;
+  height: 95%;
   background-color: whitesmoke;
   border: solid 1px black;
   border-radius: 8px;
   font-size: large;
 }
-footer {
-  width: 100%;
-  position: fixed; /* ヘッダーを固定する */
-  bottom: 0; /* 上部から配置の基準位置を決める */
-  left: 0; /* 上部から配置の基準位置を決める */
-}
-.footer1 {
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  background-color: rgb(50, 110, 201);
-  padding: 10px; /*ヘッダーの余白を指定する(上下左右)*/
+.LabelEnd {
+  color: white;
+  margin-left: 60px;
 }
 .endButton {
   margin-left: 20px;

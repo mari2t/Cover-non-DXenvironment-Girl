@@ -71,6 +71,33 @@
               会議開始
             </button>
           </label>
+          </div>
+          <div class="inputsetting">
+            <label class="LabelEnd">
+              終了時刻
+              <input
+                type="time"
+                id="EndTime"
+                name="EndTime"
+                maxlength="60"
+                size="20"
+              />
+            </label>
+          </div>
+          <div class="endButton">
+            <label class="header1Label">
+              <button
+                type="button"
+                id="EndTime"
+                name="EndTime"
+                maxlength="100"
+                size="20"
+                onclick="endButton()"
+              >
+                会議終了
+              </button>
+            </label>
+          </div>
         </div>
       </div>
       <div class="header2">
@@ -84,7 +111,7 @@
               type="text"
               id="inputStatement"
               name="inputStatement"
-              maxlength="60"
+              maxlength="180"
               size="180"
             />
           </label>
@@ -119,36 +146,6 @@
         <div id="log"></div>
       </div>
     </div>
-    <footer>
-      <div class="footer1">
-        <div class="inputsetting">
-          <label class="Label1">
-            終了時刻
-            <input
-              type="time"
-              id="EndTime"
-              name="EndTime"
-              maxlength="60"
-              size="20"
-            />
-          </label>
-        </div>
-        <div class="endButton">
-          <label class="header1Label">
-            <button
-              type="button"
-              id="EndTime"
-              name="EndTime"
-              maxlength="60"
-              size="20"
-              onclick="endButton()"
-            >
-              会議終了
-            </button>
-          </label>
-        </div>
-      </div>
-    </footer>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
