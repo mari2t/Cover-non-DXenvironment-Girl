@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>会議記録作成App</title>
+  </head>
+
+  <body id="body">
+    <header>
+      <div class="header1">
+        <h1 class="title">会議記録作成App</h1>
+        <div class="inputsetting">
+          <labe class="Label1">
+            会議名
+            <input
+              type="text"
+              id="MeetingName"
+              name="MeetingName"
+              maxlength="60"
+              size="20"
+            />
+          </labe>
+        </div>
+        <div class="inputsetting">
+          <label class="Label1">
+            開催場所
+            <input
+              type="text"
+              id="Location"
+              name="Location"
+              maxlength="60"
+              size="20"
+            />
+          </label>
+        </div>
+        <div class="inputsetting">
+          <label class="Label1">
+            参加者
+            <input
+              type="text"
+              id="inputParticipant"
+              name="participant"
+              maxlength="60"
+              size="20"
+            />
+          </label>
+        </div>
+        <div class="inputsetting">
+          <label class="Label1">
+            開始時刻
+            <input
+              type="time"
+              id="StartTime"
+              name="StartTime"
+              maxlength="60"
+              size="20"
+            />
+          </label>
+        </div>
+        <div class="startButton">
+          <label class="header1Label">
+            <button
+              type="button"
+              id="StartTime"
+              name="StartTime"
+              maxlength="60"
+              size="20"
+              onclick="startButtons()"
+            >
+              会議開始
+            </button>
+          </label>
+          </div>
+          <div class="inputsetting">
+            <label class="LabelEnd">
+              終了時刻
+              <input
+                type="time"
+                id="EndTime"
+                name="EndTime"
+                maxlength="60"
+                size="20"
+              />
+            </label>
+          </div>
+          <div class="endButton">
+            <label class="header1Label">
+              <button
+                type="button"
+                id="EndTime"
+                name="EndTime"
+                maxlength="100"
+                size="20"
+                onclick="endButton()"
+              >
+                会議終了
+              </button>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div id="buttonContainer"><label>発言者</label></div>
+      </div>
+      <div class="header3">
+        <div class="inputStatement">
+          <label class="header1Label">
+            発言内容
+            <input
+              type="text"
+              id="inputStatement"
+              name="inputStatement"
+              maxlength="180"
+              size="180"
+            />
+          </label>
+          <label class="header1Label">
+            <button
+              type="button"
+              id="sayStatement"
+              name="sayStatement"
+              maxlength="60"
+              size="20"
+            >
+              発言
+            </button>
+          </label>
+        </div>
+      </div>
+    </header>
+    <div class="wrapOfList">
+      <div class="statementGroup">
+        <div><h3 id="meetingTitle">会議記録</h3></div>
+        <div id="textMeetingName"></div>
+        <div id="textMeetingDay"></div>
+        <div id="textLocation"></div>
+        <div id="textParticipantNameList"></div>
+        <div id="textStartTime"></div>
+        <div id="textEndTime"></div>
+        <div id="textMeetingTime"></div>
+        <div id="textListOfParticipant"></div>
+        <p></p>
+        <div><p id="textContentStatement"></p></div>
+        <p></p>
+        <div id="log"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
