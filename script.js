@@ -44,8 +44,6 @@ sayStatement.addEventListener("click", () => {
   });
   document.getElementById("inputStatement").value = "";
   document.getElementById("inputStatement").focus();
-  document.getElementById("statementGroup").style.height =
-    800 + statementCounter * 100;
 });
 
 //現在の時刻を23：44のように取得する関数
