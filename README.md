@@ -1,18 +1,38 @@
 # Cover-non-DXenvironment-Girl
 
+## Description
+
 会議記録作成アプリです。
 
-・Word が入っていない  
-・音声認識アプリは使えない  
-・ネットにつながっていない
+- Word が入っていない
+- 音声認識アプリは使えない
+- ネットにつながっていない
 
 という非 DX 環境で会議記録を作るために作成しました。  
 普段はネットにつながっている PC なので  
 ブラウザ表示ならいけるかな？と思いつつ。
 
----
+This is a meeting record creation application.
 
-使用方法
+- Word is not included.
+- Voice recognition app is not available
+- No internet connection
+
+I created this app to record meetings in a non-DX environment.  
+I usually use a PC that is connected to the Internet.  
+I thought it might work in a browser view.
+
+## Example
+
+ブラウザ
+
+## ![example](/img/exampleBrowserIMG.jpg "example")
+
+Word
+
+## ![example](/img/exampleWordIMG.jpg "example")
+
+## How to use
 
 1. 会議名、開催場所、参加者（複数の場合は全角「、」で区切る）、  
    開催時刻を入力後、会議開始ボタンを押す。  
@@ -23,27 +43,18 @@
 5. 会議終了ボタンを押してもブラウザは閉じないので、  
    4 のコピペ後任意のタイミングでブラウザを閉じてください。
 
----
+## Technical Objectives
 
-使用例
+会議記録作成効率化
 
-ブラウザ表示例（入力画面）  
-※スクショの時間の関係で発言時刻と開始時刻あたりが合っていませんが  
-　実際は発言ボタンを押した時の時刻が表示されます。
-
-![画像の説明](img/exampleBrowserIMG.jpg "example")
-
-word 表示例（貼り付け時）  
-![画像の説明](img/exampleWordIMG.jpg "example")
-
----
-
-今後
+## Next
 
 txt で保存機能を追加したいです。
 
----
+## Creation Date
 
-その他
+2023/3/11
+
+## Other
 
 girl でもなんでもないのですが Cover Girl からもじってこれにしました。
